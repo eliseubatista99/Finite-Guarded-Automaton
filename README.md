@@ -3,21 +3,27 @@
 
 ### Input:
 
-  -a line with the integer n, specifying the set S = {1..n};
+  -a line with the integer n, specifying the set S = {1..n};
   
   
   -a line with the number s0 (cardinality of the initial state set S0);
   
+  
   -a line with s0 distinct integers that form the set of initial states;
   
+  
   -a line with the number f (cardinality of the end state set F);
   
+  
   -a line with distinct f integers that form the set of final states;
   
+  
   -a line with the number m of transitions (the cardinality of R));
   
+  
   -m lines where each introduces a transition in the form of i c op a b j:
   
+  
 {i being the integer representing the state of departure of the transition;
 
 {c character in transition label (c can be _);
@@ -43,6 +49,7 @@ The output is organized in one line where:
 
   -the word YES if the automaton recognizes the word;
   
+  
   -the word NO otherwise.
 
 
