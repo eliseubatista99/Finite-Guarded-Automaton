@@ -4,6 +4,7 @@
 ### Input:
 
   -a line with the integer n, specifying the set S = {1..n};
+  
   
   -a line with the number s0 (cardinality of the initial state set S0);
   
