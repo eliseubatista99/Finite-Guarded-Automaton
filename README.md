@@ -2,50 +2,50 @@
 ## Execution of a Finite Guarded Automaton
 
 ### Input:
-  -uma linha com o inteiro n, especificando o conjunto S = {1..n};
-  
-  -uma linha com o numero s0 (cardinalidade do conjunto S0 dos estados iniciais);
-  
-  -uma linha com s0 inteiros distintos que formam o conjunto dos estados iniciais;
-  
-  -uma linha com o numero f (cardinalidade do conjunto F dos estados finais);
-  
-  -uma linha com f inteiros distintos que formam o conjunto dos estados finais;
-  
-  -uma linha com o numero m de transições (a cardinalidade de R));
-  
-  -m linhas em que cada uma delas introduz uma transição sob a forma de i c op a b j :
-  
-{ i sendo o inteiro representando o estado de partida da transicão;
+  -a line with the integer n, specifying the set S = {1..n};
+  
+  -a line with the number s0 (cardinality of the initial state set S0);
+  
+  -a line with s0 distinct integers that form the set of initial states;
+  
+  -a line with the number f (cardinality of the end state set F);
+  
+  -a line with distinct f integers that form the set of final states;
+  
+  -a line with the number m of transitions (the cardinality of R));
+  
+  -m lines where each introduces a transition in the form of i c op a b j:
+  
+{i being the integer representing the state of departure of the transition;
 
-{ c o caracter no rótulo da transição (c pode ser _);
+{c character in transition label (c can be _);
 
-{ op o operador de comparação da guarda (um de \<", \<=", \=", \!=", \>=", \>" );
+{op guard comparison operator (one of \ <", \ <=", \ = ", \! =", \> = ", \>");
 
-{ a e um valor inteiro (com o qual x será comparado);
+{a is an integer value (with which x will be compared);
 
-{ b e um valor inteiro (com o qual x será actualizado);
+{b is an integer value (with which x will be updated);
 
-{ e j o inteiro que representa o estado de chegada;
+{is already the integer representing the arrival state;
 
 
-Em todas as situações em que se pode esperar um epsilon, usar-se-á o caracter _. Por exemplo a
-transicão 4 _ _ _ _ 5 representa a transiçãao epsilon que parte do estado 4 para o estado 5 sem
-que se queira nem guardar nem actualizar a variável x.
-Finalmente a ultima linha contam uma string representando a palavra t por reconhecer.
+In all situations where an epsilon can be expected, the _ character will be used. For example the
+transition 4 _ _ _ _ 5 represents the epsilon transition from state 4 to state 5 without
+either save or update variable x.
+Finally the last line contains a string representing the word t for recognition.
 
 ### Output
 
-O output é organizado numa só linha onde consta:
+The output is organized in one line where:
 
-  -a palavra YES se o automato reconhece a palavra;
-  
-  -a palavra NO caso contrario.
+  -the word YES if the automaton recognizes the word;
+  
+  -the word NO otherwise.
 
 
 ### Sample Input 1
 
-6
+6th
 
 3
 
@@ -85,7 +85,7 @@ YES
 
 ### Sample Input 2
 
-6
+6th
 
 3
 
@@ -97,9 +97,9 @@ YES
 
 10
 
-1 _ > 7 2 2
+1 _> 7 2 2
 
-1 _ > 7 3 3
+1 _> 7 3 3
 
 2 a = 7 4 4
 
@@ -125,7 +125,7 @@ YES
 
 ### Sample Input 3
 
-6
+6th
 
 3
 
@@ -137,9 +137,9 @@ YES
 
 10
 
-1 _ > 7 2 2
+1 _> 7 2 2
 
-1 _ > 7 3 3
+1 _> 7 3 3
 
 2 a = 7 4 4
 
@@ -155,7 +155,7 @@ YES
 
 4 a _ _ 2 2
 
-6 a != 1 1 6
+6 a! = 1 1 6
 
 aa
 
