@@ -2,6 +2,7 @@
 ## Execution of a Finite Guarded Automaton
 
 ### Input:
+
   -a line with the integer n, specifying the set S = {1..n};
   
   -a line with the number s0 (cardinality of the initial state set S0);
@@ -32,6 +33,7 @@
 In all situations where an epsilon can be expected, the _ character will be used. For example the
 transition 4 _ _ _ _ 5 represents the epsilon transition from state 4 to state 5 without
 either save or update variable x.
+
 Finally the last line contains a string representing the word t for recognition.
 
 ### Output
@@ -45,7 +47,7 @@ The output is organized in one line where:
 
 ### Sample Input 1
 
-6th
+6
 
 3
 
@@ -85,7 +87,7 @@ YES
 
 ### Sample Input 2
 
-6th
+6
 
 3
 
@@ -125,7 +127,7 @@ YES
 
 ### Sample Input 3
 
-6th
+6
 
 3
 
